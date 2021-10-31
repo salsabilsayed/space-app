@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/space-app/static/css/main.82625b4d.chunk.css",
+    "main.css": "/space-app/static/css/main.fd562b3f.chunk.css",
     "main.js": "/space-app/static/js/main.256a9976.chunk.js",
     "main.js.map": "/space-app/static/js/main.256a9976.chunk.js.map",
     "runtime-main.js": "/space-app/static/js/runtime-main.e72b51d0.js",
@@ -22,7 +22,7 @@
     "static/css/3.d3736018.chunk.css.map": "/space-app/static/css/3.d3736018.chunk.css.map",
     "static/css/4.69d0451b.chunk.css.map": "/space-app/static/css/4.69d0451b.chunk.css.map",
     "static/css/5.5e76d6f1.chunk.css.map": "/space-app/static/css/5.5e76d6f1.chunk.css.map",
-    "static/css/main.82625b4d.chunk.css.map": "/space-app/static/css/main.82625b4d.chunk.css.map",
+    "static/css/main.fd562b3f.chunk.css.map": "/space-app/static/css/main.fd562b3f.chunk.css.map",
     "static/js/2.ed6867e2.chunk.js.LICENSE.txt": "/space-app/static/js/2.ed6867e2.chunk.js.LICENSE.txt",
     "static/media/Crew.css": "/space-app/static/media/background-crew-tablet.16d51cf6.jpg",
     "static/media/Destination.css": "/space-app/static/media/background-destination-tablet.8f55d346.jpg",
@@ -49,7 +49,7 @@
   "entrypoints": [
     "static/js/runtime-main.e72b51d0.js",
     "static/js/2.ed6867e2.chunk.js",
-    "static/css/main.82625b4d.chunk.css",
+    "static/css/main.fd562b3f.chunk.css",
     "static/js/main.256a9976.chunk.js"
   ]
 }
