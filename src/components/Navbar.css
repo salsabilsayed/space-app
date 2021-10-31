@@ -1,0 +1,65 @@
+nav ul{
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(1rem);
+}
+
+
+.disappear{
+    display: none;
+}
+
+nav li{
+    @apply md:mx-6 my-3 md:my-0 md:py-6 cursor-pointer relative
+}
+
+
+nav li:hover{
+    color:#9CA3AF;
+}
+
+@media screen and (min-width:768px){
+    .hamburger, .close{
+        display: none;
+    }
+
+    .activeLink::after{
+        content:"";
+        position: absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height: 4px;
+        background-color: #fff;
+    }
+}
+
+@media screen and (min-width:992px){
+    nav li:hover::after{
+        content:"";
+        position: absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height: 4px;
+        background-color: #9CA3AF;
+        
+    }
+    
+    nav ul::after{
+        content: '';
+        position: absolute;
+        width:50%;
+        height: 1px;
+        background-color: rgba(255,255,255, 0.253);
+        top:50%;
+        left:-40%;
+    }
+}
+
+
+@media screen and (min-width:1200px){
+    nav ul::after{
+        width:75%;
+        left:-70%;
+    }
+}

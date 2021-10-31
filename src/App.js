@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Suspense} from "react";
+import { Route, Switch, Redirect } from "react-router";
+import Home from "./pages/home/Home";
+import Navbar from "./components/Navbar";
+import Loading from "./components/Loading";
+
+
+const Destination = React.lazy(()=> import('./pages/destination/Destination'));
+const Crew = React.lazy(()=> import('./pages/crew/Crew'));
+
+const Technology = React.lazy(()=> import('./pages/technology/Technology'));
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Navbar />
+      <Suspense fallback={<Loading />}>
+      <Switch>
+        <Route path="/" exact>
+          <Redirect to="/home" />
+        </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/destination">
+          <Destination />
+        </Route>
+        <Route path="/crew">
+          <Crew />
+        </Route>
+        <Route>
+          <Technology path="/technology" />
+        </Route>
+      </Switch>
+      </Suspense>
+    </React.Fragment>
   );
 }
 

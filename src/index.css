@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +18,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+section{
+  background-position: center center;
+  background-size: cover;
+}
+
+.spacing {
+  letter-spacing: 0.125rem;
+}
+
+.brdr {
+  border-bottom: 1px solid rgba(255,255,255, 0.253);
+}
+
+
+

@@ -1,0 +1,44 @@
+.destination {
+    background-image: url('../../assets/bg-images/background-destination-mobile.jpg');
+
+}
+
+.active::after{
+    content:'';
+    position: absolute;
+    width:70%;
+    height: 3px;
+    background-color: #fff;
+    left: 12%;
+    bottom: 0;
+}
+
+.hoverEffect:hover::after{
+    content:'';
+    position: absolute;
+    width:70%;
+    height: 3px;
+    left: 12%;
+    bottom: 0;
+    background-color: #9CA3AF;
+}
+
+@media screen and (min-width:768px){
+    .destination{
+        background-image: url('../../assets/bg-images/background-destination-tablet.jpg');
+    }
+}
+
+@media screen and (min-width:992px){
+    .destination{
+        background-image: url('../../assets/bg-images/background-destination-desktop.jpg');
+    
+    }
+    .active::after{
+        left:0;
+    }
+
+    .hoverEffect:hover::after{
+        left:0;
+    }
+}
