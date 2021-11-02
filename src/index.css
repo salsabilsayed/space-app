@@ -32,6 +32,36 @@ section{
   border-bottom: 1px solid rgba(255,255,255, 0.253);
 }
 
+.home, .destination, .technology, .crew {
+  animation: fadeIn 0.5s linear 0s 1 normal;
+}
+
+article{
+  animation: fromBottomUp 0.8s linear 0.2s 1 normal;
+}
+
+@keyframes fadeIn{
+  0%{
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes fromBottomUp{
+  0%{
+      opacity: 0;
+      transform: translateY(-30%);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
 
 
 
