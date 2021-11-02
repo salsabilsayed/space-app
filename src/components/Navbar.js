@@ -34,22 +34,22 @@ const Navbar = () => {
             onClick={toggleMenuHandler} />
 
           <li className="spacing">
-            <NavLink activeClassName="activeLink" to="/home">
+            <NavLink activeClassName="activeLink" to="/home" onClick={toggleMenuHandler}>
               <span className="mr-2">00</span>HOME
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="activeLink" to="/destination">
+            <NavLink activeClassName="activeLink" to="/destination" onClick={toggleMenuHandler}>
               <span className="mr-2">01</span>DESTINATION
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="activeLink" to="crew">
+            <NavLink activeClassName="activeLink" to="crew" onClick={toggleMenuHandler}>
               <span className="mr-2">02</span>CREW
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="activeLink" to="technology">
+            <NavLink activeClassName="activeLink" to="technology" onClick={toggleMenuHandler}>
               <span className="mr-2">03</span>TECHNOLOGY
             </NavLink>
           </li>
