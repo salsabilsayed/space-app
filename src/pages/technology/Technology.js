@@ -43,7 +43,7 @@ import data from '../../data';
                             </ul>
                             <div className="text-center lg:text-left">
                                 <Title>
-                                    <p className="font-subTitle text-gray-500 spacing mb-3">THE TERMINOLOGY...</p>
+                                    <p className="font-subTitle text-gray-400 spacing mb-3">THE TERMINOLOGY...</p>
                                     <h2 className="text-xl md:text-2xl lg:text-5xl">
                                         {name}
                                     </h2>
